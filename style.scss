@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #1b1b1b;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body a {
+    color: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    padding: 10px;
+
+    @media (min-width: 600px){
+        padding: 20px;
+    }
+}
