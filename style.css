@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: #1b1b1b;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body a {
+  color: #ffffff;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    padding: 20px;
+  }
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0px;
+  bottom: -3px;
+  left: 0px;
+  background-color: #d81dd8;
+}
+
+a:hover {
+  color: #d81dd8;
+}
+
+a:hover::before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #d81dd8), color-stop(75%, #6210fa));
+  background: linear-gradient(to right, #d81dd8 40%, #6210fa 75%);
+}
+
+img {
+  height: auto;
+  width: 500px;
+}
+
+/*FlexBox*/
+nav.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.flexbox ul li {
+  margin-right: 20px;
+}
+
+nav.flexbox ul li:last-child {
+  margin-right: 0px;
+}
+/*# sourceMappingURL=style.css.map */
